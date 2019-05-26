@@ -11,5 +11,8 @@
   "dependencies": {
     "@babel/core": "^7.4.4",
     "app-root-path": "^2.2.1"
+  },
+  "devDependencies": {
+    "@types/babel__core": "^7.1.2"
   }
 }
