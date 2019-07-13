@@ -12,7 +12,7 @@ function safeGet(getVal) {
   return null;
 }
 
-function process(src, path, config, transformOptions) {
+function process(src, path) {
   const filename = basename(path);
   const webpackConfig = require(root + '/webpack.config.js')('test', { mode: 'production' });
   const webpackRule = safeGet(() => webpackConfig.module.rules.find(r => r.test.test(filename)));
